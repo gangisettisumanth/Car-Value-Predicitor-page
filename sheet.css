@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+*{
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    padding: 0; margin:0;
+    outline:none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    background-color: darkturquoise;
+}
+.name{
+margin: 1rem;
+padding: 1rem;
+position:relative;
+text-align: center;
+font-size: 3rem;
+border-bottom:2px solid blue ;
+font-weight: 3rem;
+background-color: whitesmoke;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+label{
+    display:inline-block;
+    padding: 12px 12px 12px 0;
+}
+input[type=submit]{
+    padding: 12px 20px;
+    border-radius:5px 3px ;
+    border-color: black;
+    background-color: rgb(255, 0, 149);
+    color: white;
+    float: right;
+    border:none ;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: deepskyblue;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 15px;
+    margin:0px 10%;
+    opacity: 0.8;
+}
+
+.img{
+    background:url(download.jpeg)  no-repeat center fixed;
+    background-size: cover;
+}
+
+.col-25{
+    width: 25%;
+    float:left;
+    margin-top: 6px;
+}
+.col-75{
+    width:75%;
+    float:left;
+    margin-top: 6px;
+}
+.col-45{
+    width: 45%;
+    float:inline-start;
+    margin-top: 6px;
+}
+input[onclick=submit]{
+    border: red;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+@media screen and (max-width: 600px) {
+    .col-25, .col-75,.col-45, .name,img,input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    }
+}
+
